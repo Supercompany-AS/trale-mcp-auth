@@ -1,6 +1,6 @@
 {
 	"name": "@supercompany/trale-mcp-auth",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "OAuth helper for Trale MCP — authorize once in your browser, then use it from Claude Agent SDK or any programmatic MCP client without daily re-auth.",
 	"type": "module",
 	"main": "./dist/index.js",
