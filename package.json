@@ -1,0 +1,55 @@
+{
+	"name": "@supercompany/trale-mcp-auth",
+	"version": "0.1.0",
+	"description": "OAuth helper for Trale MCP — authorize once in your browser, then use it from Claude Agent SDK or any programmatic MCP client without daily re-auth.",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"trale-mcp-auth": "./dist/cli.js"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"clean": "rm -rf dist",
+		"prepublishOnly": "bun run clean && bun run build"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"keywords": [
+		"trale",
+		"mcp",
+		"oauth",
+		"claude-agent-sdk",
+		"model-context-protocol"
+	],
+	"homepage": "https://github.com/Supercompany-AS/trale-mcp-auth#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Supercompany-AS/trale-mcp-auth.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Supercompany-AS/trale-mcp-auth/issues"
+	},
+	"author": "Supercompany AS",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.0",
+		"typescript": "^5.9.3"
+	}
+}
